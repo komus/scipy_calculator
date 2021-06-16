@@ -10,6 +10,6 @@
 ```
 
 ## Usage
-
+Average function resets the calculator memory before execution
 
 ## Sample Code
