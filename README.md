@@ -5,9 +5,9 @@
 ## Background
 
 ## Installation
-'''
+```
 	pip install scipy_calculator
-'''
+```
 
 ## Usage
 
