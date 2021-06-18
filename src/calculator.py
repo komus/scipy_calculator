@@ -17,7 +17,6 @@ class Calculator:
         - Division
         - Modulo
         - Root
-        - Average
     """
     def __init__(self) -> None:
         self.__index = 0
@@ -42,11 +41,6 @@ class Calculator:
         self.__index = 0
         self.__operator = []
 
-    def average(self, item: list[float]) -> float:
-        self.reset
-        self.__index = sum(item)/len(item)
-        self.__operator.append("average: " + ','.join(str(x) for x in item))
-        return self.__index
 
     def sum(self, *args):
         if(len(args) > 1):
