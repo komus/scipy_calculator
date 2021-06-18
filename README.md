@@ -90,19 +90,6 @@ err
 >>> my_cal.divide(0, 78)
 0
 ```
-#### Average
-`average` method accepts LIST of `int` and `float` to return the computed average
-```python
->>> grade = [62, 78.9, 35.78, 90.23, 89.12, 45.78]
->>> avg_grade = my_cal.average(grade)
->>> avg_grade
-66.96833333333335
-```
-Adding or subtracting without reseting, will add/subtract the value from the last result
-```python
->>> my_cal.sum(10)
-76.96833333333335
-```
 
 #### Modulo
 For `modulo`, zero division returns `err`
