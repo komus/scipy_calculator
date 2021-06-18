@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
 
 setup(
     name="scipy_calculator",
-    version="0.0.1",
-    description="A calculator",
+    version="0.0.4",
+    description="A Scientific calculator",
     py_modules=["calculator"],
     package_dir={"": "src"},
     long_description=long_description,

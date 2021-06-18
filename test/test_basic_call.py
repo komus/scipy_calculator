@@ -1,6 +1,4 @@
-import sys
-sys.path.append("../")
-from src.calculator import Calculator
+from calculator import Calculator
 
 
 def test_add():
@@ -77,13 +75,6 @@ def test_modulo():
     assert cal.modulo(10, 0) == 'err'
     assert cal.modulo(14.67, 3) == 2.67
 
-
-def test_average():
-    cal = Calculator()
-    grade = [10, 12.90, 14, 5, 7]
-    assert cal.average(grade) == 9.78
-
-    assert cal.sum(2) == 11.78
 
 
 def test_root():
