@@ -4,7 +4,21 @@ import itertools
 
 
 class Calculator:
-
+    """
+        Basic Calculator Operations.
+    
+        This class handles basic operations of a calculator.
+    
+        Mathematics Operations:
+        - Power
+        - Addition
+        - Subtraction
+        - Multiplication
+        - Division
+        - Modulo
+        - Root
+        - Average
+    """
     def __init__(self) -> None:
         self.__index = 0
         self.__operator = []
