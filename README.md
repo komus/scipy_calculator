@@ -9,7 +9,7 @@ Scientific Python Calculator (scipy_calculator) is a library for doing mathemati
 
 **Installation via PYPI**
 ```sh
-$ pip install scipy_calculator
+$ pip install scipy-calculator
 ```
 **Installation via Github**
 this is for the stable released version
@@ -77,6 +77,19 @@ Because the calculator memory wasn't reset, `2` was added to the result of `10+2
 20
 ```
 #### Division
+For `divide`, zero division returns `err`
+```python
+>>> my_cal.divide(100, 5)
+20
+>>> my_cal.sum(10)
+30
+>>> my_cal.divide(2)
+15
+>>> my_cal.divide(0)
+err
+>>> my_cal.divide(0, 78)
+0
+```
 #### Average
 `average` method accepts LIST of `int` and `float` to return the computed average
 ```python
@@ -91,8 +104,31 @@ Adding or subtracting without reseting, will add/subtract the value from the las
 76.96833333333335
 ```
 
-
-
 #### Modulo
+For `modulo`, zero division returns `err`
+```python
+>>> my_cal.modulo(10, 2)
+0
+>>> my_cal.modulo(15, 4)
+3
+>>> my_cal.modulo(10, 0)
+err
+>>> my_cal.modulo(14.67, 3)
+2.67
+```
 #### Root
+```python
+>>> my_cal.root(27, 3)
+3
+>>> my_cal.root(32, 5)
+2
+```
 #### Power
+```python
+>>> my_cal.power(5, 3)
+125
+>>> my_cal.power(3.5, 3)
+42.875
+>>> my_cal.power(2, 5)
+32
+```
