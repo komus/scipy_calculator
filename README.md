@@ -28,15 +28,54 @@ Examples will be shown below
 
 ## Sample Code
 ```python
-	from calculator import Calculator
+from calculator import Calculator
+
+my_cal = Calculator()
 ```
 ### Addition
+`sum` method accepts `list`, `int`, `float`
 ```python
+>>> my_cal.sum(10, 2)
+12
+>>> my_cal.sum(2)
+14
+>>> my_cal.sum([10, 12.90, 14, 5, 7])
+62.9
+```
 
+Because the calculator memory wasn't reset, `2` was added to the result of `10+2`. The result `14` was added to list 
+
+```python
+>>> my_cal.reset
+>>> my_cal.sum(3, 2)
+5
 ```
 
 #### Subtraction
+`subtract`
+```python
+>>> my_cal.subtract(5)
+-5
+>>> my_cal.reset
+>>> my_cal.subtract(10, 4)
+6
+>>> my_cal.subtract(2)
+4
+>>> my_cal.subtract(3, 1)
+0
+```
 #### Multiply
+```python
+>>> val = [2, 4, 5, 2, 1]
+>>> my_cal.multiply(1000)
+1000
+>>> my_cal.multiply(val)
+80
+>>> my_cal.multiply(12, 2)
+24
+>>> my_cal.subtract(4)
+20
+```
 #### Division
 #### Average
 `average` method accepts LIST of `int` and `float` to return the computed average
