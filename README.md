@@ -33,89 +33,54 @@ from calculator import Calculator
 my_cal = Calculator()
 ```
 ### Addition
-`sum` method accepts `list`, `int`, `float`
 ```python
->>> my_cal.sum(10, 2)
-12
->>> my_cal.sum(2)
-14
->>> my_cal.sum([10, 12.90, 14, 5, 7])
-62.9
+>>> my_cal.add(10)
+10
 ```
-
-Because the calculator memory wasn't reset, `2` was added to the result of `10+2`. The result `14` was added to list 
-
-```python
->>> my_cal.reset
->>> my_cal.sum(3, 2)
-5
-```
-
 #### Subtraction
 `subtract`
 ```python
 >>> my_cal.subtract(5)
--5
->>> my_cal.reset
->>> my_cal.subtract(10, 4)
-6
->>> my_cal.subtract(2)
-4
->>> my_cal.subtract(3, 1)
-0
+5
 ```
-#### Multiply
-```python
->>> val = [2, 4, 5, 2, 1]
->>> my_cal.multiply(1000)
-1000
->>> my_cal.multiply(val)
-80
->>> my_cal.multiply(12, 2)
-24
->>> my_cal.subtract(4)
-20
-```
+because the memory was not reset, `5` was subtracted from previous value `10`
+
+
 #### Division
-For `divide`, zero division returns `err`
+For `divide`, zero division returns `None` and description
 ```python
->>> my_cal.divide(100, 5)
-20
->>> my_cal.sum(10)
-30
->>> my_cal.divide(2)
-15
->>> my_cal.divide(0)
-err
->>> my_cal.divide(0, 78)
-0
+>>> cal.divide(2)
+2.5
+```
+```python
+>>> cal.divide(0)
+number cannot be zero => float division by zero
+None
+
+>>> cal.memory_val
+2.5
 ```
 
+
+#### Multiply
+```python
+>>> cal.multiply(2.5)
+6.25
+```
 #### Modulo
-For `modulo`, zero division returns `err`
 ```python
->>> my_cal.modulo(10, 2)
+>>> cal.modulo(5)
+1.25
+```
+#### Square root
+```python
+>>> cal.sqrt(16)
+4
+```
+
+#### Reset
+```python
+>>> cal.reset()
+>>> cal.memory_val
 0
->>> my_cal.modulo(15, 4)
-3
->>> my_cal.modulo(10, 0)
-err
->>> my_cal.modulo(14.67, 3)
-2.67
-```
-#### Root
-```python
->>> my_cal.root(27, 3)
-3
->>> my_cal.root(32, 5)
-2
-```
-#### Power
-```python
->>> my_cal.power(5, 3)
-125
->>> my_cal.power(3.5, 3)
-42.875
->>> my_cal.power(2, 5)
-32
 ```

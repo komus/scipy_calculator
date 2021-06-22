@@ -1,5 +1,7 @@
 from calculator import Calculator
 
 
-class Sci_Calculator(Calculator):
-    pass
+class SciCalculator(Calculator):
+    def __init__(self) -> None:
+        Calculator.__init__(self)
+
